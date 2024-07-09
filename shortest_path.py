@@ -71,6 +71,8 @@ while node is not None:
     path.append(node)
     node = prevNode[node]
 
+path.reverse()
+
 disp = ""
 
 for i in range(len(path)):
@@ -80,5 +82,7 @@ for i in range(len(path)):
     else:
         disp+=path[i]
 
-print("Shortest Distance from ",start," to ",end," is ",shortestDist[end])
+print()
 print(disp)
+print("Shortest Distance:",shortestDist[end])
+print()
