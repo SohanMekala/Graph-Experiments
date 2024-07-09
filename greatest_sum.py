@@ -69,5 +69,7 @@ if current_node == end:
 
 disp = " -> ".join(path)
 
-print("Greatest Path Sum from", start, "to", end, "is", total_sum)
-print("Path:", disp)
+print()
+print(disp)
+print("Path Sum:",total_sum)
+print()
